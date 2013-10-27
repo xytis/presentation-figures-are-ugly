@@ -1,0 +1,166 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+\usepackage{xltxtra}
+\usepackage{fontspec}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{textcomp}
+
+\usepackage[lithuanian]{babel}
+
+
+% create \currentname command.
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\usefonttheme{professionalfonts}
+
+\usecolortheme{lily}
+
+%remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\usetheme{default}
+
+\definecolor{roasted_carrot}{RGB}{244, 130, 20}
+\definecolor{text_grey}{RGB}{92, 92, 92}
+\setbeamercolor{structure}{fg=roasted_carrot}
+\setbeamercolor{normal text}{fg=text_grey}
+
+\title{Gražūs grafikai}
+\author[Vytis]{Vytis Valentinavičius}
+
+\date{\scriptsize {\sc all wrongs reserved} \textcopyleft\ {\sc 2013}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{\tableofcontents[pausesections, hideallsubsections]}
+
+\section{Kas yra grafikas?}
+\frame{\tableofcontents[currentsection,  subsectionstyle=show/shaded/hide]}
+
+\begin{frame}{\currentname}
+  \begin{figure}
+    \begin{center} 
+      \includegraphics[width=0.95\textwidth]{img/graph_00.png}
+      \caption*{Autobuso 5G išvykimo iš Universiteto stotelės link Pašilaičių grafikas}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{\currentname}
+  \begin{figure}
+    \begin{center} 
+      \includegraphics[]{img/graph_02}
+      \caption*{Tranzistoriaus amplitudės ir fazės atsakas}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\section{Kam skirtas grafikas?}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\begin{frame}{\currentname}
+  \begin{itemize}
+   \only<1>{
+   \item Vaizdžiai perteikti teorinę priklausomybę
+    \begin{figure}
+     \begin{center} 
+      \includegraphics[]{img/graph_03}
+     \end{center}    
+    \end{figure}
+   }
+   \only<2>{
+    \item Pademonstruoti kiekybinius tyrimo rezultatus
+    \begin{figure}
+     \begin{center}
+      \includegraphics[]{img/graph_04}
+     \end{center}    
+    \end{figure}
+}
+  \end{itemize}
+\end{frame}
+
+\section{Kaip daromas grafikas?}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\begin{frame}{\currentname}
+Bad example?
+\end{frame}
+
+\subsection{Idėja}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\begin{frame}{\currentname}
+  \begin{itemize}[<+->]
+    \item Žinokite, ką norite parodyti
+    \only<2-5>{ 
+    \hspace{0.5cm}      %Keep the first minipage below title.
+    \begin{minipage}{0.48\textwidth}
+      \begin{itemize}
+        \item<2-> Dėsningumą\only<2>{:}
+        \item<3-> Pasiskirstymą\only<3>{:}
+        \item<4-> Evoliuciją\only<4>{:}
+        \item<5-> Bruožus\only<5>{:}
+      \end{itemize}
+    \end{minipage}
+    \begin{minipage}{0.41\textwidth}
+      \only<2>{ \includegraphics[]{img/graph_05_pattern} }
+      \only<3>{ \includegraphics[]{img/graph_05_distribution} }
+      \only<4>{ \includegraphics[]{img/graph_05_evolution} }
+      \only<5>{ \includegraphics[]{img/graph_05_features} }
+    \end{minipage}
+    }
+    \only<6-8>{
+    \item<6-8> Grafikas:
+    \begin{itemize}
+      \item<6-> turi perteikti norimą informaciją
+      \item<7-> neturi būti perkrautas
+      \item<8-> turi būti naudingas
+    \end{itemize}
+    }
+    \item<9-> Pasirinkite tinkamą formą
+    \only<10>{
+      \begin{figure}
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_05_bad}}%
+        \raisebox{-.5\height}{\textcolor{roasted_carrot}{$\blacktriangleright$}}%
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_05_good}}
+      \end{figure}
+    }
+  \end{itemize}
+\end{frame}
+
+\subsection{Duomenys}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\subsection{Ašys}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\subsection{Tinklelis}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\subsection{Legenda}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\subsection{Antraštė}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\section{The end(???)}
+\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+
+\begin{frame}
+  \begin{figure}
+    \begin{center} 
+      \includegraphics{img/ugly-figures-cropped.png}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\end{document}
