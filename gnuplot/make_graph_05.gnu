@@ -25,13 +25,15 @@ plot  "data/05" using 2:xtic(1) with boxes ls 1
 
 #Distribution part
 unset xtics
-set boxwidth 0.5
+set boxwidth 0.3
 set style fill solid
 
 set yrange [0 : 1]
 
 set output '../img/graph_05_distribution.pdf'
-plot  "data/gaussian" using 2:xtic(1) with boxes ls 1
+f(x) = exp(-x*x/2)
+
+plot "data/gaussian" using 1:2 with boxes ls 4, f(x) with l ls 1 lw 3
 
 #Feature part
 
@@ -66,7 +68,7 @@ unset xtics
 set xrange [0 : 36]
 
 set output '../img/graph_05_evolution.pdf'
-plot  "data/05"  with lp ls 1 pt 7 ps 0.3
+plot  "data/05"  with lp ls 1 lw 3 pt 7 ps 0.5
 
 
 #Pattern part
@@ -83,4 +85,4 @@ set output '../img/graph_05_pattern.pdf'
 f(x) = a*x + b
 fit f(x) "data/06" u 1:2  via a, b
 
-plot  "data/06" using 1:2 with p ls 2 pt 7 ps 0.3, f(x) with l ls 1 lw 3
+plot  "data/06" using 1:2 with p ls 2 pt 7 ps 0.5, f(x) with l ls 1 lw 3

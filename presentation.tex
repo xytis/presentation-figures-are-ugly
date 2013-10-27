@@ -68,7 +68,9 @@
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
 \begin{frame}{\currentname}
-  \begin{itemize}
+  \begin{itemize}      \only<2> {
+
+      }
    \only<1>{
    \item Vaizdžiai perteikti teorinę priklausomybę
     \begin{figure}
@@ -102,7 +104,7 @@ Bad example?
   \begin{itemize}[<+->]
     \item Žinokite, ką norite parodyti
     \only<2-5>{ 
-    \hspace{0.5cm}      %Keep the first minipage below title.
+    \begin{flushleft}      %Keep the first minipage below title.
     \begin{minipage}{0.48\textwidth}
       \begin{itemize}
         \item<2-> Dėsningumą\only<2>{:}
@@ -117,9 +119,10 @@ Bad example?
       \only<4>{ \includegraphics[]{img/graph_05_evolution} }
       \only<5>{ \includegraphics[]{img/graph_05_features} }
     \end{minipage}
+    \end{flushleft}
     }
-    \only<6-8>{
-    \item<6-8> Grafikas:
+    \only<6->{
+    \item<6-> Grafikas:
     \begin{itemize}
       \item<6-> turi perteikti norimą informaciją
       \item<7-> neturi būti perkrautas
@@ -140,11 +143,114 @@ Bad example?
 \subsection{Duomenys}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
+\begin{frame}{\currentname}
+ \begin{itemize}[<+->]
+    \item<1-> Pasirinkite teisingus matavimo vienetus
+    \only<2-4>{
+      \begin{itemize}
+        \item<2-> Labiausiai tikėtinus
+        \item<3-> Normalizuotus
+      \end{itemize}
+    }
+    \only<4>{
+      \begin{figure}
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_07_bad}}%
+        \raisebox{-.5\height}{\textcolor{roasted_carrot}{$\blacktriangleright$}}%
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_07_good}}
+      \end{figure}
+    }
+  \item<5-> Atvaizduokite tik svarbias paklaidas
+    \only<6>{
+      \begin{figure}
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_06_no_whiskers}}%
+        \raisebox{-.5\height}{\textcolor{roasted_carrot}{$\blacktriangleleft\blacktriangleright$}}%
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_06_whiskers}}
+      \end{figure}
+    }
+  \item<7-> Išmeskite nereikalingas vertes
+    \only<8>{
+      \begin{figure}
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_08_bad}}%
+        \raisebox{-.5\height}{\textcolor{roasted_carrot}{$\blacktriangleright$}}%
+        \raisebox{-.5\height}{\includegraphics[]{img/graph_08_good}}
+      \end{figure}
+    }
+  \item<9-> Nepamirškite teorijos
+  \only<9->{
+    \begin{itemize}
+      \item<10-> Palyginikite su teorine kreive \note{fit'inimas}
+      \item<11-> Pažymėkite svarbias dalis \note{smailės, lūžiai, lygumos}
+      \item<12-> Sunormuokite...
+    \end{itemize}
+  }
+  \end{itemize}
+\end{frame}
+
+
 \subsection{Ašys}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
+\begin{frame}{\currentname}
+  \begin{itemize}
+    \item<1-> Skalė
+    \only<2-3>{ 
+    \begin{flushleft}      %Keep the first minipage below title.
+    \begin{minipage}{0.48\textwidth}
+      \begin{itemize}
+        \item<2-> Tiesinė
+        \item<3-> Logaritminė
+      \end{itemize}
+    \end{minipage}
+    \begin{minipage}{0.41\textwidth}
+      \only<2>{ 
+        \begin{figure}[h]
+          \centering
+          \begin{tabular}{c}
+            \includegraphics[]{img/graph_09_line_line} \\
+            \includegraphics[]{img/graph_09_line_exp}
+          \end{tabular}
+        \end{figure}
+      }
+      \only<3>{ 
+        \begin{figure}[h]
+          \centering
+          \begin{tabular}{c}
+            \includegraphics[]{img/graph_09_log_line} \\
+            \includegraphics[]{img/graph_09_log_exp} 
+          \end{tabular}
+        \end{figure} 
+      }
+    \end{minipage}
+    \end{flushleft}
+    }
+    \item<4-> Ribos
+    \only<4-6>{ 
+      \begin{itemize}
+        \item<5-> Turi apimti visą grafiką
+        \item<6-> Turi apimti svarbias reikšmes \note{ 0, soties srovė ir pan. }
+      \end{itemize}
+    }
+    \item<7-> Kiekybė
+    \only<8>{ 
+      \begin{figure}[h]
+        \includegraphics[]{img/graph_06_crowded}
+      \end{figure} 
+    }
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{\textcolor{text_grey}{HELL}NO}
+  \begin{figure}[h]
+    \includegraphics[height=0.9\textheight]{img/hellno}
+  \end{figure} 
+\end{frame}
+
+
 \subsection{Tinklelis}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+\begin{frame}{\currentname}
+  \includegraphics[height=0.9\textheight]{img/hellno}
+\end{frame}
 
 \subsection{Legenda}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
