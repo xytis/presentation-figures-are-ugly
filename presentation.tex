@@ -8,6 +8,7 @@
 \usepackage{color}
 \usepackage{fontspec}
 \usepackage{textcomp}
+\usepackage{gensymb}
 
 \usepackage[lithuanian]{babel}
 
@@ -197,8 +198,8 @@ Bad example?
     \begin{flushleft}      %Keep the first minipage below title.
     \begin{minipage}{0.48\textwidth}
       \begin{itemize}
-        \item<2-> Tiesinė
-        \item<3-> Logaritminė
+        \item<2> Tiesinė
+        \item<3> Logaritminė
       \end{itemize}
     \end{minipage}
     \begin{minipage}{0.41\textwidth}
@@ -256,19 +257,49 @@ Bad example?
   \end{itemize}
 \end{frame}
 
+\begin{frame}{\currentname}
+  \begin{figure}
+    \begin{center} 
+      \includegraphics[]{img/graph_02}
+      \caption*{Tranzistoriaus amplitudės ir fazės atsakas}
+    \end{center}
+  \end{figure}
+\end{frame}
+
 \subsection{Legenda}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 \begin{frame}{\currentname}
   \begin{itemize}[<+->]
-    \item ?
+    \item Ar turite daugiau negu vieną kreivę?
+    \item Ar nepavyksta naudoti užrašų ties kreivėmis?
   \end{itemize}
+\end{frame}
+
+\begin{frame}{\currentname}
+ \begin{figure}[h]
+    \includegraphics[]{img/photo_luminescense}
+  \end{figure} 
 \end{frame}
 
 \subsection{Antraštė}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
-\section{The end(???)}
-\frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
+\begin{frame}{\currentname}
+  \begin{itemize}[<+->]
+    \item<1-> Kas?
+    \item<3-> ``Išmatuota judrio priklausomybė nuo temperatūros''
+    \item<2-> Kodėl?
+    \item<4-> ``n-Ge judris ties $T=179\degree$ K pasiekia maksimalią vertę $\mu=237$ cm/s''
+    \item<5-> Trumpa.
+  \end{itemize}
+\end{frame}
+
+%\section{The End}
+\begin{frame}[plain,c]
+\begin{center}
+\Huge The End
+\end{center}
+\end{frame}
 
 \begin{frame}
   \begin{figure}
