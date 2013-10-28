@@ -1,41 +1,126 @@
 <notes>
-  <note number="1">
+  <note number="2">
     Sveiki, 
     Šiandien sužinosite kas yra gražūs grafikai, tačiau prieš tai turiu sužinoti kiek tarp Jūsų yra pirmakursių.
     O kiek yra žmonių jau rašiusių bakalaurinį darbą ar mokslinį straipsnį?
   </note>
-  <note range="2-4">
+  <note range="3-5">
     Prieš pradėdami turėsim susitarti ką galime vadinti grafiku,
     Kam grafikai gali būti panaudojami,
     Ir tada nersim detaliai į kiekvieną grafiko elementą ir pasitarsim kaip jie daromi, ką galima daryti, o ko verčiau vengti.
   </note>
-  <note range="5-7">
+  <note range="6-8">
     Pradėkim nuo to -- kas yra grafikas?
     Tikrai jums teks susidurti su žmonėmis, kurie įrodinės, jog grafikas atrodo taip ir tik taip.
     Tačiau aš vartosiu žodį 'grafikas' kaip sinonimą žodžiams 'priklausomybė' ir 'paveiksliukas'.
   </note>
-  <note number="8">
+  <note number="9">
     Prisimenant ką tik matytą priklausomybę -- ar galite iš atminties pasakyti, kokiai fazei esant tranzistoriaus signalo amplitudė yra didžiausia?
     Taip: Puiku, tai mano turimas padoraus grafiko pazyzdys yra labiau padorus nei aš tikėjausi.
     Ne: Puiku, realiai, kai skaitomas Jūsų darbas dalis grafikų gauna tik tiek dėmesio kiek pastaroji skaidrė. Turėkite tai omenyje kai dedate grafikus į darbą.
     
     Tai kam tada reikalingi grafikai?
   </note>
-  <note range="9-10">
+  <note range="10-11">
     Mums (fizikams) aktualiausios yra dvi grafikų panaudojimo sritys.
     Teorijų vizualizavimui ir tyrimo rezultatų pateikimui.
     Aš kalbėsiu tik apie šias dvi temas.
   </note>
-  <note range="11-15">
+  <note range="12-16">
     Jei eidami į šią paskaitą susižinosite su kuo daromi grafikai, tai turiu jus nuvilti.
     Geram grafikui pakanka pieštuko ir liniuotės.
     Nors pastaroji irgi nėra būtina.
   </note>
-  <note range="16-21">
+  <note range="17-22">
     Kalbant apie ideologinę pusę -- prieš darant grafiką reikia apsibrėžti ką norite parodyti.
     Jei tai yra laboratoriniai -- tai tiesiog bus parašyta apraše, jei tai jūsų BBD ar KBD,
     na, laikas sugalvoti...
     Ką pastebėjau -- laboratorinių darbų aprašai yra puikus pavyzdžių lobynas, kaip suformuoti grafiką,
     kuris idėjiškai būtų naudingas.
+    Nuspreskite ką norite pabrėžti:
+    Dėsningumą -- mano rezultatai yra tiesiškai priklausomi nuo svirtelės sukiojimo.
+    Pasiskirstymą -- O gal jie išsidėste kokiu nors reikšmingu pasiskirstymu ir man svarbu kaip jis sutampa su teorija?
+    Evoliuciją -- O gal man tiesiog įdomu kaip jie kinta laike
+    Bruožus -- ar egzistuoja svarbus lūžis, pikas ar vertė, kurį norėčiau akcentuoti?
+  </note>
+  <note range="23-25">
+    Darant grafiką nepamirškite jog jis skirtas žiūrėti, tai iš pirmo žvilgsnio jis turi perteikti norimą informaciją,
+    Neturi būti užgrūstas nereikalingais dalykais, kurie blaško skaitytojo dėmesį. Jūsų tikslas -- demonstruoti savo išmonę ir tyrimo rezultatus, o ne rėmelio spalvą ar taškų mišrainę. [signal to noise]
+    Ir jei paveiksliuko aprašymas reikalauja pilnos pastraipos vien todėl kad jis baisiai komplikuotas -- gal jis nėra naudingas? O gal jame tiek daug informacijos, kad tiesiog negali visos vienu metu suvokti?
+  </note>
+  <note range="26-27">
+    Kai žinote ką norite demonstruoti -- pasirinkite formą. T.y. duomenis vaizduosite taškais, linijomis, stulpeliais ar meškiukų pilvais.
+    Pastebėjimas iš praktikos -- Histogramų fakultete reikia TIK darbuose su detektoriais, Ne voltamperinių charakteristikų atvaizdavimui.
+    Blogas formos pasirinkimas gali deformuoti jūsų duomenis.
+  </note>
+  <note number="28">
+    Mylėkite savo duomenis.
+    Tai gal nėra taip akivaizdu per laboratorinius, bet kai 4 ryto galų gale po ilgų skaičiavimų ir teorinių sąpaliojimų kažką iš savo BBD sugebėsite išspausti -- suprasite ką reiškia meilė =]
+  </note>
+  <note range="29-32">
+    Pasirinkite teisingus matavimo vienetus.
+    Jei tai puslaidininkiai -- nematuokite judrio metrais į nanosekundę. Kitiems bus daug lengviau susigaudyti jūsų grafike, jei matavimo vienetai bus įprasti ir labiausiai tikėtini tame kontekste.
+    
+    Kartais papildomo ekspresyvumo suteikia duomenų normavimas. Tarkime į etaloninį matavimą ar į kažkokį reikšminį skaičių, tarkime tranzito laiką:...
+    Toks grafiko pakeitimas leidžia nesunkiai suprasti sakinį kaip "Krūvininkų paketas dėl difuzijos ir rekombinacijos juda lėčiau nei be šių reiškinių."
+  </note>
+  <note range="33-34">
+    Esu matęs kaip žmonės skaičiuoja paklaidas, tačiau jų neatvaizduoja ir atvirkčiai. Tiesiog nedarykite nesamonių. Ne visiem tos paklaidos reikalingos.
+  </note>
+  <note range="35-36">
+    Toks 'lifehacker' patarimas. Atsikratykite pavieniais nepavykusiais matavimais.
+  </note>
+  <note range="37-40">
+    Ir dažnai grafikas gali pasakyti daug daugiau jei jis yra sugretinamas su teorija. Fitai, pikai, galų gale -- normavimas...
+  </note>
+  <note range="41-42">
+    Judam toliau -- pirmas grynai grafinis elementas -- ašys.
+    Blogai jas padarius galima bet kokiam grafikui pritemti žmogžudystę.
+    Pradžiai -- skalės.
+  </note>
+  <note range="43-44">
+    Būna dviejų skonių -- tiesinės ir logaritminės. Kadangi žmonėms patinka tiesios linijos -- visada stenkitės tokias ir vaizduoti, tai gali reikalauti logaritminės skalės kai priklausomybė yra eksponentinė.
+    Man dar minėjo jog reikia ir skaityti išmokyti -- tai logaritminė skalė turi tankėjančius pagaliukus =]. Tai va Vytautai -- I've got this covered =]
+  </note>
+  <note range="45-48">
+    Ribos -- tai skaičių vertės ant skalės. Jos gali testis nuo -inf iki inf, bet tada jūsų duomenys gali likti tik maaažas taškelis didžiuliame lauke.
+    Akivaizdžios tiesos:
+      Jos turi talpinti visą grafiką (ir atvaizduojamus duomenis), linijos einančios už regėjimo ribų yra netoleruotinos.
+      Jos kartais turi talpinti ir tas vertes kurių jūsų duomenys nepasiekia, pvz 0 ar soties srovę.
+      Na ir čia toks kultūros klausimas labiau. Pats esu ne kartą daręs, kad duomenų mišrainė pasirinkus geras ribas tampa kūdikio užpakaliuko lygumo tiesine priklausomybe. Kartais toks pakeitimas yra būtinas, o kartais tai yra duomenų klastojimas. Čia jau reikia apsispręsti pagal kontekstą.
+  </note>
+  <note range="49-51">
+    Ašys yra baigtinės, tai ir nedėkite ant jų milijono verčių.
+    HELL NO.
+    Geras skaičius -- 3-7 brūkšniukai per ašį.
+  </note>
+  <note range="52-56">
+    Tinklelis grafike reikalingas jei:
+    Darote reference plot.
+    Turite kelias skirtingas ašis arba žiauriai daug informacijos paveiksliuke.
+    Einat į PJ alborus.
+    Dėja šis paveiksliukas pas PJ nebūtų vertas pažymio. Mat pagaliukai žiūri į išorę. Čia jau man atrodo aiškiau kai nesipjauna tinklelis ir skalės pagaliukai.
+  </note>
+  <note range="57-60">
+    Legenda kaip moteris, su ja ankšta, be jos iš vis blogai.
+    Ji reikalinga tik tada kai turite daugiau nei vieną kreivę.
+    Ji nereikalinga, jei galite kitaip perduoti informaciją apie savo duomenis.
+  </note>
+  <note range="61-66">
+    Ir viena svarbiausių dalių -- Antraštė (caption).
+    Ji privalo atsakyti į klausimą Kas pavaizduota. Bonus jei ji atsako ir į klausimą Kodėl pavaizduota.
+    Pvz:
+    ...
+    Nesirūpinkite per daug kai darysite grafikus, aš baigiau fizfaką nemokėdamas atsakymo į klausimą kodėl, tik nepamirškite -- gera antraštė -- kaip geras sijonas.
+    Turi būti trumpas.
+  </note>
+  <note number="67">
+    Apžvalga:
+    norėdami padaryti gerą grafiką:
+    Kristalizuokite idėja, apdorokite duomenis, nuvalykite ašis, nesipainiokite į tinklus, gerbkite mitus ir legendas
+    IR visada užrašykite parduodančia antraštę. Kaip kokybiškoje bulvarinėje spaudoje =]
+  </note>
+  <note number="68">
+    Done. Wait for applauses.
   </note>
 </notes>
