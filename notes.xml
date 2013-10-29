@@ -27,9 +27,9 @@
     Aš kalbėsiu tik apie šias dvi temas.
   </note>
   <note range="12-16">
-    Jei eidami į šią paskaitą susižinosite su kuo daromi grafikai, tai turiu jus nuvilti.
-    Geram grafikui pakanka pieštuko ir liniuotės.
-    Nors pastaroji irgi nėra būtina.
+    Darant grafiką nepamirškite jog jis skirtas žiūrėti, tai iš pirmo žvilgsnio jis turi perteikti norimą informaciją,
+    Neturi būti užgrūstas nereikalingais dalykais, kurie blaško skaitytojo dėmesį. Jūsų tikslas -- demonstruoti savo išmonę ir tyrimo rezultatus, o ne rėmelio spalvą ar taškų mišrainę. [signal to noise]
+    Ir jei paveiksliuko aprašymas reikalauja pilnos pastraipos vien todėl kad jis baisiai komplikuotas -- gal jis nėra naudingas? O gal jame tiek daug informacijos, kad tiesiog negali visos vienu metu suvokti?
   </note>
   <note range="17-22">
     Kalbant apie ideologinę pusę -- prieš darant grafiką reikia apsibrėžti ką norite parodyti.
@@ -43,70 +43,65 @@
     Evoliuciją -- O gal man tiesiog įdomu kaip jie kinta laike
     Bruožus -- ar egzistuoja svarbus lūžis, pikas ar vertė, kurį norėčiau akcentuoti?
   </note>
-  <note range="23-25">
-    Darant grafiką nepamirškite jog jis skirtas žiūrėti, tai iš pirmo žvilgsnio jis turi perteikti norimą informaciją,
-    Neturi būti užgrūstas nereikalingais dalykais, kurie blaško skaitytojo dėmesį. Jūsų tikslas -- demonstruoti savo išmonę ir tyrimo rezultatus, o ne rėmelio spalvą ar taškų mišrainę. [signal to noise]
-    Ir jei paveiksliuko aprašymas reikalauja pilnos pastraipos vien todėl kad jis baisiai komplikuotas -- gal jis nėra naudingas? O gal jame tiek daug informacijos, kad tiesiog negali visos vienu metu suvokti?
-  </note>
-  <note range="26-27">
+  <note range="23-24">
     Kai žinote ką norite demonstruoti -- pasirinkite formą. T.y. duomenis vaizduosite taškais, linijomis, stulpeliais ar meškiukų pilvais.
     Pastebėjimas iš praktikos -- Histogramų fakultete reikia TIK darbuose su detektoriais, Ne voltamperinių charakteristikų atvaizdavimui.
     Blogas formos pasirinkimas gali deformuoti jūsų duomenis.
   </note>
-  <note number="28">
+  <note number="25">
     Mylėkite savo duomenis.
     Tai gal nėra taip akivaizdu per laboratorinius, bet kai 4 ryto galų gale po ilgų skaičiavimų ir teorinių sąpaliojimų kažką iš savo BBD sugebėsite išspausti -- suprasite ką reiškia meilė =]
   </note>
-  <note range="29-32">
+  <note range="26-29">
     Pasirinkite teisingus matavimo vienetus.
     Jei tai puslaidininkiai -- nematuokite judrio metrais į nanosekundę. Kitiems bus daug lengviau susigaudyti jūsų grafike, jei matavimo vienetai bus įprasti ir labiausiai tikėtini tame kontekste.
     
     Kartais papildomo ekspresyvumo suteikia duomenų normavimas. Tarkime į etaloninį matavimą ar į kažkokį reikšminį skaičių, tarkime tranzito laiką:...
     Toks grafiko pakeitimas leidžia nesunkiai suprasti sakinį kaip "Krūvininkų paketas dėl difuzijos ir rekombinacijos juda lėčiau nei be šių reiškinių."
   </note>
-  <note range="33-34">
+  <note range="30-31">
     Esu matęs kaip žmonės skaičiuoja paklaidas, tačiau jų neatvaizduoja ir atvirkčiai. Tiesiog nedarykite nesamonių. Ne visiem tos paklaidos reikalingos.
   </note>
-  <note range="35-36">
+  <note range="32-33">
     Toks 'lifehacker' patarimas. Atsikratykite pavieniais nepavykusiais matavimais.
   </note>
-  <note range="37-40">
+  <note range="34-37">
     Ir dažnai grafikas gali pasakyti daug daugiau jei jis yra sugretinamas su teorija. Fitai, pikai, galų gale -- normavimas...
   </note>
-  <note range="41-42">
+  <note range="38-39">
     Judam toliau -- pirmas grynai grafinis elementas -- ašys.
     Blogai jas padarius galima bet kokiam grafikui pritemti žmogžudystę.
     Pradžiai -- skalės.
   </note>
-  <note range="43-44">
+  <note range="40-41">
     Būna dviejų skonių -- tiesinės ir logaritminės. Kadangi žmonėms patinka tiesios linijos -- visada stenkitės tokias ir vaizduoti, tai gali reikalauti logaritminės skalės kai priklausomybė yra eksponentinė.
     Man dar minėjo jog reikia ir skaityti išmokyti -- tai logaritminė skalė turi tankėjančius pagaliukus =]. Tai va Vytautai -- I've got this covered =]
   </note>
-  <note range="45-48">
+  <note range="42-45">
     Ribos -- tai skaičių vertės ant skalės. Jos gali testis nuo -inf iki inf, bet tada jūsų duomenys gali likti tik maaažas taškelis didžiuliame lauke.
     Akivaizdžios tiesos:
       Jos turi talpinti visą grafiką (ir atvaizduojamus duomenis), linijos einančios už regėjimo ribų yra netoleruotinos.
       Jos kartais turi talpinti ir tas vertes kurių jūsų duomenys nepasiekia, pvz 0 ar soties srovę.
       Na ir čia toks kultūros klausimas labiau. Pats esu ne kartą daręs, kad duomenų mišrainė pasirinkus geras ribas tampa kūdikio užpakaliuko lygumo tiesine priklausomybe. Kartais toks pakeitimas yra būtinas, o kartais tai yra duomenų klastojimas. Čia jau reikia apsispręsti pagal kontekstą.
   </note>
-  <note range="49-51">
+  <note range="46-48">
     Ašys yra baigtinės, tai ir nedėkite ant jų milijono verčių.
     HELL NO.
     Geras skaičius -- 3-7 brūkšniukai per ašį.
   </note>
-  <note range="52-56">
+  <note range="49-52">
     Tinklelis grafike reikalingas jei:
     Darote reference plot.
     Turite kelias skirtingas ašis arba žiauriai daug informacijos paveiksliuke.
     Einat į PJ alborus.
     Dėja šis paveiksliukas pas PJ nebūtų vertas pažymio. Mat pagaliukai žiūri į išorę. Čia jau man atrodo aiškiau kai nesipjauna tinklelis ir skalės pagaliukai.
   </note>
-  <note range="57-60">
+  <note range="54-57">
     Legenda kaip moteris, su ja ankšta, be jos iš vis blogai.
     Ji reikalinga tik tada kai turite daugiau nei vieną kreivę.
     Ji nereikalinga, jei galite kitaip perduoti informaciją apie savo duomenis.
   </note>
-  <note range="61-66">
+  <note range="58-63">
     Ir viena svarbiausių dalių -- Antraštė (caption).
     Ji privalo atsakyti į klausimą Kas pavaizduota. Bonus jei ji atsako ir į klausimą Kodėl pavaizduota.
     Pvz:
@@ -114,13 +109,13 @@
     Nesirūpinkite per daug kai darysite grafikus, aš baigiau fizfaką nemokėdamas atsakymo į klausimą kodėl, tik nepamirškite -- gera antraštė -- kaip geras sijonas.
     Turi būti trumpas.
   </note>
-  <note number="67">
+  <note number="64">
     Apžvalga:
     norėdami padaryti gerą grafiką:
     Kristalizuokite idėja, apdorokite duomenis, nuvalykite ašis, nesipainiokite į tinklus, gerbkite mitus ir legendas
     IR visada užrašykite parduodančia antraštę. Kaip kokybiškoje bulvarinėje spaudoje =]
   </note>
-  <note number="68">
+  <note number="65">
     Done. Wait for applauses.
   </note>
 </notes>

@@ -19,6 +19,17 @@
 \newcommand*{\currentname}{\@currentlabelname}
 \makeatother
 
+% create \source command
+\usepackage[absolute,overlay]{textpos}
+\setbeamercolor{framesource}{fg=gray}
+\setbeamerfont{framesource}{size=\tiny}
+
+\newcommand{\source}[1]{\begin{textblock*}{4cm}(8.7cm,9.0cm)
+    \begin{beamercolorbox}[ht=0.5cm,right]{framesource}
+        \usebeamerfont{framesource}\usebeamercolor[fg]{framesource} {#1}
+    \end{beamercolorbox}
+\end{textblock*}}
+
 \usefonttheme{professionalfonts}
 
 \usecolortheme{lily}
@@ -45,6 +56,7 @@
     \begin{center} 
       \includegraphics[width=0.98\textwidth]{img/convincing.png}
     \end{center}
+    \source{xkcd.com}
   \end{figure}
 \end{frame}
 
@@ -77,9 +89,7 @@
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
 \begin{frame}{\currentname}
-  \begin{itemize}      \only<2> {
-
-      }
+  \begin{itemize}
    \only<1>{
    \item Vaizdžiai perteikti teorinę priklausomybę
     \begin{figure}
@@ -102,10 +112,25 @@
 \section{Kaip daromas grafikas?}
 \frame{\tableofcontents[currentsection, subsectionstyle=show/shaded/hide]}
 
+% \begin{frame}{\currentname}
+% \begin{center}
+% \Huge \uncover<2->{Pieštukas} \only<1-3>{+ \uncover<3>{Liniuotė}} \only<4>{=]}
+% \end{center}
+% \end{frame}
+
 \begin{frame}{\currentname}
 \begin{center}
-\Huge \uncover<2->{Pieštukas} \only<1-3>{+ \uncover<3>{Liniuotė}} \only<4>{=]}
+\large Gražus grafikas?
 \end{center}
+\end{frame}
+
+\begin{frame}{\currentname}
+  Gražus grafikas:
+  \begin{itemize}
+    \item<1-> turi perteikti norimą informaciją
+    \item<2-> neturi būti perkrautas
+    \item<3-> turi būti naudingas
+  \end{itemize}
 \end{frame}
 
 \subsection{Idėja}
@@ -114,7 +139,7 @@
 \begin{frame}{\currentname}
   \begin{itemize}[<+->]
     \item Žinokite, ką norite parodyti
-    \only<2-5>{ 
+    \only<1-5>{ 
     \begin{flushleft}      %Keep the first minipage below title.
     \begin{minipage}{0.48\textwidth}
       \begin{itemize}
@@ -133,20 +158,14 @@
     \end{flushleft}
     }
     \only<6->{
-    \item<6-> Grafikas:
-    \begin{itemize}
-      \item<6-> turi perteikti norimą informaciją
-      \item<7-> neturi būti perkrautas
-      \item<8-> turi būti naudingas
-    \end{itemize}
-    }
-    \item<9-> Pasirinkite tinkamą formą
-    \only<10>{
+    \item<6-> Pasirinkite tinkamą formą
+    \uncover<7>{
       \begin{figure}
         \raisebox{-.5\height}{\includegraphics[]{img/graph_05_bad}}%
         \raisebox{-.5\height}{\textcolor{roasted_carrot}{$\blacktriangleright$}}%
         \raisebox{-.5\height}{\includegraphics[]{img/graph_05_good}}
       \end{figure}
+    }
     }
   \end{itemize}
 \end{frame}
@@ -189,7 +208,7 @@
   \item<9-> Nepamirškite teorijos
   \only<9->{
     \begin{itemize}
-      \item<10-> Palyginikite su teorine kreive \note{fit'inimas}
+      \item<10-> Palyginkite su teorine kreive \note{fit'inimas}
       \item<11-> Pažymėkite svarbias dalis \note{smailės, lūžiai, lygumos}
       \item<12-> Sunormuokite...
     \end{itemize}
@@ -263,7 +282,7 @@
 \begin{frame}{\currentname}
   \begin{itemize}[<+->]
     \item Ar pavieniai duomenys yra svarbūs?
-    \item Ar grafikas yra komplikuotas?
+    \item Ar grafikas yra sudėtingas?
     \item Ar Jums laborai pas P.J. Žilinską?
   \end{itemize}
 \end{frame}
@@ -289,7 +308,8 @@
 \begin{frame}{\currentname}
  \begin{figure}[h]
     \includegraphics[]{img/photo_luminescense}
-  \end{figure} 
+  \end{figure}
+  \source{gnuplotting.com}
 \end{frame}
 
 \subsection{Antraštė}
@@ -300,7 +320,7 @@
     \item<1-> Kas?
     \item<3-> ``Išmatuota judrio priklausomybė nuo temperatūros''
     \item<2-> Kodėl?
-    \item<4-> ``n-Ge judris ties $T=179\degree$ K pasiekia maksimalią vertę $\mu=237$ cm/s''
+    \item<4-> ``n-Ge judrio priklausomybė nuo temperatūros. Ties $T=179\degree$ K pasiekiama maksimali vertė $\mu=237$ cm/s''
     \item<5-> Trumpa.
   \end{itemize}
 \end{frame}
@@ -320,6 +340,7 @@
       \includegraphics{img/ugly-figures-cropped.png}
     \end{center}
   \end{figure}
+  \source{phdcomics.com\,\copyright\,2011}
 \end{frame}
 
 \end{document}

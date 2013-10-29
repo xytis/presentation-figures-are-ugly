@@ -42,7 +42,7 @@ set mytics 10
 set xrange [0.6:1.9]
 set xtics 0.1,0.2,1.9
 set xlabel 'Fotonų energija, eV' tc rgb "#5C5C5C"
-set ylabel 'Fotonų srovės tankis, m^{-2}s^{-1}eV^{-1}sr^{-1}' tc rgb "#5C5C5C"
+set ylabel 'Fotonų srovės tankis, m^{-2}s^{-1}eV^{-1}sr^{-1}' tc rgb "#5C5C5C" offset -1,-0.5
 set logscale y
 set yrange [1e7:1e22]
 set format '%g'
